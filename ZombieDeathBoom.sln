@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieDeathBoom.Plugins", "ZombieDeathBoom.Plugins.csproj", "{DDE6F272-FCA1-AB59-D493-C58144AF6057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieDeathBoom", "ZombieDeathBoom.csproj", "{9E823256-864A-79F5-3265-DA0856CE95A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieDeathBoom.Editor.Plugins", "ZombieDeathBoom.Editor.Plugins.csproj", "{65A0C703-FEA5-4128-F628-CC1976AA654B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDE6F272-FCA1-AB59-D493-C58144AF6057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE6F272-FCA1-AB59-D493-C58144AF6057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE6F272-FCA1-AB59-D493-C58144AF6057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE6F272-FCA1-AB59-D493-C58144AF6057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E823256-864A-79F5-3265-DA0856CE95A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E823256-864A-79F5-3265-DA0856CE95A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E823256-864A-79F5-3265-DA0856CE95A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E823256-864A-79F5-3265-DA0856CE95A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A0C703-FEA5-4128-F628-CC1976AA654B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A0C703-FEA5-4128-F628-CC1976AA654B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A0C703-FEA5-4128-F628-CC1976AA654B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A0C703-FEA5-4128-F628-CC1976AA654B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
