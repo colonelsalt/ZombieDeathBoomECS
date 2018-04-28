@@ -1,0 +1,53 @@
+do all GameObjects have to be entities????? no
+
+Entities:
+DONE:
+-Player
+    EVs:
+        -PlayerEV
+            Components:
+                PlayerInput [implemented]
+                Gun [implemented]
+                Health [implemented]
+                Camera [implemented]
+        -ZombieDestination
+            Components:
+                Position [implemented]
+-Zombie
+    EVs:
+        -ZombieEV
+            Components:
+                ZombieMovement [implemented]
+                ZombieAnimation [implemented]
+                ZombieAttack [implemented]
+                ZombieTrigger [implemented]
+                Health [implemented]
+        -GunTargetEV
+-Crosshair
+    EVs:
+        CrosshairEV
+            Components:
+                Position [implemented]
+    
+-HUD
+    EVs:
+        HUDEV
+            Components:
+                GameOver [implemented]
+                DamageUI [implemented]
+                Score [implemented]
+    
+Engines:
+    GunEffects [done]
+    HUD [done]
+    GunShooting [done]
+    PlayerInput [done]
+    ZombieAnimation [done]
+    ZombieMovement [done]
+    ZombieSpawner [done]
+    
+    
+    
+    
+    
+    
