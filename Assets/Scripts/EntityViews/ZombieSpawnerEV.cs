@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using Svelto.ECS;
+﻿using Svelto.ECS;
 
 public class ZombieSpawnerEV : EntityView
 {

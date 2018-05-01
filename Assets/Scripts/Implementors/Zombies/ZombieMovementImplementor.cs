@@ -4,12 +4,11 @@ using Svelto.ECS;
 
 public class ZombieMovementImplementor : MonoBehaviour, IImplementor, IZombieMovementComponent
 {
+    // --------------------------------------------------------------
+
     private NavMeshAgent m_Nav;
 
-    private void Awake()
-    {
-        m_Nav = GetComponent<NavMeshAgent>();
-    }
+    // --------------------------------------------------------------
 
     public bool navMeshEnabled
     {
@@ -25,5 +24,12 @@ public class ZombieMovementImplementor : MonoBehaviour, IImplementor, IZombieMov
         {
             m_Nav.destination = value;
         }
+    }
+
+    // --------------------------------------------------------------
+
+    private void Awake()
+    {
+        m_Nav = GetComponent<NavMeshAgent>();
     }
 }

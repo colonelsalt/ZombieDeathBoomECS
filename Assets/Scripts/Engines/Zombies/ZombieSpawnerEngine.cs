@@ -25,32 +25,9 @@ class ZombieSpawnerEngine : SingleEntityViewEngine<ZombieSpawnerEV>
         m_EntityFactory = entityFactory;
     }
 
-    private IEnumerator Spawn()
-    {
-        while (true)
-        {
-            yield return m_WaitTime;
-            Vector3 randomPos = m_ZombieSpawner.spawnerComponent.spawnPositions[Random.Range(0, m_ZombieSpawner.spawnerComponent.spawnPositions.Length)];
-            GameObject zombie = m_GameObjectFactory.Build(m_ZombieSpawner.spawnerComponent.zombieToSpawn);
-            zombie.transform.position = randomPos;
-
-            List<IImplementor> implementors = new List<IImplementor>();
-            zombie.GetComponentsInChildren(implementors);
-
-            m_EntityFactory.BuildEntity<ZombieEntity>(zombie.GetInstanceID(), implementors.ToArray());
-            
-            //Debug.Log("Spawned zombie with ID " + zombie.GetInstanceID());
-
-            yield return null;
-            m_ZombieSpawner.spawnerComponent.lastSpawnedID.value = zombie.GetInstanceID();
-        }
-    }
-
     protected override void Add(ZombieSpawnerEV entityView)
     {
         m_ZombieSpawner = entityView;
-        m_WaitTime = new WaitForSeconds(m_ZombieSpawner.spawnerComponent.secsBetweenSpawns);
-        Spawn().Run();
     }
 
     protected override void Remove(ZombieSpawnerEV entityView)

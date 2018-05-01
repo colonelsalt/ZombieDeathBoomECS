@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// Wrapper around Unity Raycasting functionality
 public interface IRayCaster
 {
     int GetRayHitTarget(Ray ray, out Vector3 impactPoint);

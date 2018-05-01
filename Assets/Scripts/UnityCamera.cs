@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class CameraImplementor : MonoBehaviour, IImplementor, ICameraComponent
+// Wrapper around Unity Camera utility functions
+public class UnityCamera : MonoBehaviour, ICamera
 {
     private Camera m_Camera;
 

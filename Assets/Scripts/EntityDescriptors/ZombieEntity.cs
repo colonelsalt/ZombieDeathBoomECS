@@ -1,5 +1,3 @@
 ﻿using Svelto.ECS;
 
-public class ZombieEntity : GenericEntityDescriptor<ZombieEV, GunTargetEV>
-{
-}
+public class ZombieEntity : GenericEntityDescriptor<ZombieEV, GunTargetEV> { }

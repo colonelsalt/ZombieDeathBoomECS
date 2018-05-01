@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using Svelto.ECS;
+﻿using Svelto.ECS;
 
 public class ZombieEV : EntityView
 {
@@ -12,10 +11,6 @@ public class ZombieEV : EntityView
     public IZombieTriggerComponent triggerComponent;
 
     public IHealthComponent healthComponent;
-
-    public IDeathComponent deathComponent;
-
-    public ISoundComponent soundComponent;
 }
 
 public class GunTargetEV : EntityView

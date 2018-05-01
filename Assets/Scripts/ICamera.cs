@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-
-public interface ICameraComponent : IComponent
+public interface ICamera : IComponent
 {
     Ray ScreenPointToRay(Vector3 screenPos);
 }

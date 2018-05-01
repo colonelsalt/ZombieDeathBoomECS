@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ZombieTriggerImplementor : MonoBehaviour, IImplementor, IZombieTriggerComponent
 {
+    // --------------------------------------------------------------
 
     public DispatchOnSet<bool> triggeredAgainstTarget { get; set; }
 
@@ -13,6 +14,8 @@ public class ZombieTriggerImplementor : MonoBehaviour, IImplementor, IZombieTrig
             GetComponent<Collider>().enabled = value;
         }
     }
+
+    // --------------------------------------------------------------
 
     private void Awake()
     {

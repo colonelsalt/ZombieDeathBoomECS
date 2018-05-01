@@ -3,13 +3,19 @@ using UnityEngine;
 
 public class ZombieSpawnerImplementor : MonoBehaviour, IImplementor, IZombieSpawnerComponent
 {
+    // --------------------------------------------------------------
+
     [SerializeField]
     private GameObject m_ZombiePrefab;
 
     [SerializeField]
     private float m_SecsBetweenSpawns = 3f;
 
+    // --------------------------------------------------------------
+
     public DispatchOnSet<int> lastSpawnedID { get; set; }
+
+    public Vector3[] spawnPositions { get; private set; }
 
     public GameObject zombieToSpawn
     {
@@ -27,7 +33,7 @@ public class ZombieSpawnerImplementor : MonoBehaviour, IImplementor, IZombieSpaw
         }
     }
 
-    public Vector3[] spawnPositions { get; private set; }
+    // --------------------------------------------------------------
 
     private void Awake()
     {

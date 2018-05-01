@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// Wrapper around Unity Time utitlities
 public interface ITime
 {
     float deltaTime { get; }
