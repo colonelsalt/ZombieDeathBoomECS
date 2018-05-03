@@ -25,9 +25,7 @@ public class GunShootingEngine : SingleEntityViewEngine<PlayerEV>, IQueryingEnti
     }
 
     public void Ready()
-    {
-        
-    }
+    { }
 
     protected override void Add(PlayerEV entityView)
     {
