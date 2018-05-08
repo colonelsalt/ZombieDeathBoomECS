@@ -1,7 +1,7 @@
 # ZombieDeathBoomECS
 ###Entities, components, systems and zombies.
 
-![Gameplay GIF](https://msdnshared.blob.core.windows.net/media/2018/05/clip_image005_thumb.gif)
+![Gameplay GIF](https://msdnshared.blob.core.windows.net/media/2018/05/clip_image005.gif)
 
 This repository accompanies the tutorial at <https://blogs.msdn.microsoft.com/uk_faculty_connection/2018/05/08/entity-component-system-in-unity-a-tutorial/>.
 Clone or download this branch to get started.
